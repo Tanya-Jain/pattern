@@ -25,7 +25,7 @@ for e in dom.by_tag("div.entry")[:5]: # Top 5 reddit entries.
     for a in e.by_tag("a.title")[:1]: # First <a class="title"> in entry.
         print(plaintext(a.content))
         print(a.attrs["href"])
-        print(""))
+        print("")
 
 # The links in the HTML source code may be relative,
 # e.g., "../img.jpg" instead of "www.domain.com/img.jpg".
