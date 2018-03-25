@@ -12,7 +12,7 @@ before_install:
   - conda install --yes numpy scipy
   - pip install --quiet pytest pytest-cov pytest-xdist
 
-install: travis_wait 40
+install:
   - python setup.py install --quiet
   # Install and compile libsvm and liblinear  
   - sudo apt-get install -y build-essential
